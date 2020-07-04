@@ -21,6 +21,11 @@ const users = [
     userId: '4',
     customerAccountId: '2',
   },
+  {
+    username: 'alice',
+    userId: '5',
+    customerAccountId: '3',
+  },
 ];
 
 module.exports = {

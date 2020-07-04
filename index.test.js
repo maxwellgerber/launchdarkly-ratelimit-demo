@@ -98,5 +98,11 @@ describe('The server', () => {
       await expect200NTimes(request, 10);
       await expect429(request);
     });
+
+    it('Alice is suspended and can only make a single', async () => {
+      request = await asUser('alice');
+      await expect200NTimes(request, 1);
+      await expect429(request);
+    });
   });
 });
